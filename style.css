@@ -430,7 +430,7 @@ textarea {
 
     }
     #services .services-items .services-item {
-        margin: 20px 10px;
+        margin: 20px 0px;
     }
     #contact .contact-content {
         flex-direction: column;
@@ -439,6 +439,12 @@ textarea {
     @media (max-width: 600px) {
         #navbar {
             flex-direction: column;
+        }
+        #navbar nav ul {
+            margin: auto;
+        }
+        #navbar nav ul a {
+            font-size: 10px;
         }
         #navbar img {
             margin: 9px auto;
@@ -454,8 +460,15 @@ textarea {
             flex-direction: column;
         }
         #about .content-about .grid-img {
-        width: 300px;
-        margin: auto;
+            width: 300px;
+            margin: auto;
+        }
+        .grid-img img:nth-child(1) {
+            transform: translateX(0px); 
+        }
+
+        .grid-img img:nth-child(2) {
+            transform: translateX(0px);  
         }
         #about .btn2 {
             margin: 2rem 0;
@@ -468,7 +481,18 @@ textarea {
             flex-direction: column;
         }
         #services .services-items .services-item {
-            margin: 20px 10px;
+            margin: 20px 0px;
+            display: block;
+
+        }
+        #services .services-items .services-item h3 {
+            font-size: 13px;
+        }
+        #services .services-items .services-item h3 span {
+            right: -50px;
+        }
+        #services .services-items .services-item p {
+            font-size: 12px;
         }
         #daytime .daytime-items {
             display: block;
